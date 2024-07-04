@@ -4,7 +4,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 const API_KEY = "44717269-26bd411e987b6b0139d6ec9c5";
 export function getPicturesByQuery(query) {
     
-    return fetch(`https://pixabay.com/api?key=${API_KEY}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true`)
+    return fetch(`https://pixabay.com/api/?key=${API_KEY}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true`)
     .then(res => {
         
         if (!res.ok) {
